@@ -26,14 +26,13 @@
 							 <h><b>{% split_link link 0 %}</b></h3>
 						</div>
 						<div class="col-sm-4">
-							 {{ link | safe }}
 							 <a href="{% split_link link 1 %}" class="but">Submit link</a>
 						</div>
 						{% else %}
 							{{ link | safe }}
 						{% endif %}
 						{% if controlint == 0 %}
-							<div>
+							<div style="margin-left: 20px;">
 								{% autoescape off %}
 									{% get_links link requests %}
 								{% endautoescape %}
