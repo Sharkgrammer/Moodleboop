@@ -15,9 +15,9 @@
 			{% if linklistOutput %}
 			{% load link_tags %}
 			{% for link in linklistOutput %}
-				<div style="{background-color: red">
-					<div class = "container-fluid">
-						<div class="row">
+				<div style="background-color: red">
+					<div class = "container-fluid" style="background-color: yellow">
+						<div class="row" style="background-color: green">
 							{% if controlint == 0 %}
 							<div class="col-sm-2">
 								<img src="{% get_name link %}" alt="{% split_link link 2 %}">
