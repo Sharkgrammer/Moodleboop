@@ -13,12 +13,22 @@
 			{% load link_tags %}
 				<ul>
 					{% for link in linklistOutput %}
-						{{ link | safe }}
+					<div>
 						{% if controlint == 0 %}
-							{% autoescape off %}
-								{% get_links link requests %}
-							{% endautoescape %}
+						<div>
+							<img src="{% get_name link %}" class="beside"> {{ link | safe }}
+						</div>
+						{% else %}
+							{{ link | safe }}
 						{% endif %}
+						{% if controlint == 0 %}
+							<div>
+								{% autoescape off %}
+									{% get_links link requests %}
+								{% endautoescape %}
+							</div>
+						{% endif %}
+					</div>
 					{% endfor %}
 				</ul>
 			{% else %}

@@ -16,3 +16,8 @@ def get_links(LinkFull, r):
             data += ("<p><a href='" + Links[y].get("href").replace("?forcedownload=1", "") + "'>" + Links[y].text  + "</a></p>")
             #print (Links[y].text.replace("Job Spec -","").replace("Job Spec ","").replace(".pdf","") +  "   " + Links[y].get("href").replace("?forcedownload=1", ""))
     return data
+
+@register.simple_tag
+def get_name(LinkFull):
+    data = "https://logo.clearbit.com/" + LinkFull.split("-")[0].replace("<h3><b>", "").replace(" ","") + ".com?size=80"
+    return data
