@@ -19,14 +19,16 @@ def get_links(LinkFull, r):
 
 @register.simple_tag
 def get_name(LinkFull):
-    data = "https://logo.clearbit.com/" + LinkFull.split("-")[0].replace("<h3><b>", "").replace(" ","") + ".com?size=100"
+    data = "https://logo.clearbit.com/" + LinkFull.split("-")[0].replace("<h3><b>", "").replace(" ","") + ".com?size=50"
     return data
 
 @register.simple_tag
 def split_link(LinkFull, mode):
     data = ""
     if (mode == 0):
-        data = LinkFull.split("-----")[0]
-    else:
         data = LinkFull.split("-----")[1]
+    else:
+        data = LinkFull.split("-----")[0]
+    if (mode == 3):
+        data = data.split("-")[0] + " has no image on the server"
     return data
