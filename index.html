@@ -16,11 +16,11 @@
 			{% load link_tags %}
 			{% for link in linklistOutput %}
 				<div>
-					<div class = "container-fluid">
-						<div class="row" style="background: green">
+					<div class = "card" style="background-color: #f1f1f1;">
+						<div class="row">
 							{% if controlint == 0 %}
 							<div class="col-sm-2">
-								<img src="{% get_name link %}" alt="{% split_link link 2 %}">
+								<img src="{% get_name link %}" alt="{% split_link link 2 %}" class="center">
 							</div>
 							<div class="col-sm-8">
 								<h><b>{% split_link link 0 %}</b></h3>
@@ -40,9 +40,6 @@
 									{{ link | safe }}
 								</div>
 							{% endif %}
-						</div>
-						<div>
-							</br>
 						</div>
 					</div>
 				</div>
