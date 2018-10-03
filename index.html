@@ -13,7 +13,7 @@
 			{% load link_tags %}
 				<ul>
 					{% for link in linklistOutput %}
-					<div>
+					<div class = "card">
 						{% if controlint == 0 %}
 						<div>
 							<img src="{% get_name link %}" class="beside"> {{ link | safe }}
