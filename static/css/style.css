@@ -41,7 +41,10 @@ a:hover {
 	background: #D3D3D3;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 15px;
-	padding: 2px 16px;
+	margin-top: 10;
+    margin-bottom: 10;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .card:hover {

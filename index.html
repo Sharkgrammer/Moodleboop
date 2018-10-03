@@ -11,7 +11,7 @@
 		{% else %}
 			{% if linklistOutput %}
 			{% load link_tags %}
-				<ul>
+				<div>
 					{% for link in linklistOutput %}
 					<div class = "card">
 						{% if controlint == 0 %}
@@ -30,7 +30,7 @@
 						{% endif %}
 					</div>
 					{% endfor %}
-				</ul>
+				</div>
 			{% else %}
 				<p>No jobs on moodle</p>
 			{% endif %}
