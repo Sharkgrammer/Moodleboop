@@ -20,11 +20,11 @@
 						<div class="row">
 							{% if controlint == 0 %}
 							<div class="col-sm-2">
-								<img src="{% get_name link %}" alt="{% split_link link 3 %}">
+								<img src="{% get_name link %}" alt="{% split_link link 2 %}">
 							</div>
 							<div class="col-sm-8">
 								<h><b>{% split_link link 0 %}</b></h3>
-								{% if controlint == 1 %}
+								{% if controlint == 0 %}
 									<div>
 										{% autoescape off %}
 											{% get_links link requests %}
@@ -33,7 +33,7 @@
 								{% endif %}
 							</div>
 							<div class="col-sm-2">
-								<a href="{% split_link link 0 %}" class="but">Submit link</a>
+								<a href="{% split_link link 1 %}" class="but">Submit link</a>
 							</div>
 							{% else %}
 								<div style=" margin-left: 20px;">
@@ -50,21 +50,3 @@
 		{% endif %}
     </body>
 </html>
-
-<div class="container-fluid">
-		<div class="row">
-		<div class="col-sm-2">
-		</div>
-		<div class="col-sm-3">
-			<p id="stock_date"/> 
-		</div>
-		<div class="col-sm-3">
-			<p id="stock_price"/> 
-		</div>      
-		<div class="col-sm-3">
-			<p id="stock_market"/> 
-		</div>      
-		<div class="col-sm-1">
-		</div>
-		</div>
-	</div>
