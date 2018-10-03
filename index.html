@@ -14,9 +14,9 @@
 		{% else %}
 			{% if linklistOutput %}
 			{% load link_tags %}
-				<div>
-					{% for link in linklistOutput %}
-					<div class = "container-fluid card">
+			{% for link in linklistOutput %}
+				<div class="card">
+					<div class = "container-fluid">
 						<div class="row">
 							{% if controlint == 0 %}
 							<div class="col-sm-2">
@@ -42,8 +42,8 @@
 							{% endif %}
 						</div>
 					</div>
-					{% endfor %}
 				</div>
+			{% endfor %}
 			{% else %}
 				<p>No jobs on moodle</p>
 			{% endif %}
