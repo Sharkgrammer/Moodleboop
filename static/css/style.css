@@ -33,8 +33,9 @@ a:hover {
   display: inline-block;
 }
 
-.beside{
-	display:inline-block
+img{
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .card {
