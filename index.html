@@ -11,28 +11,26 @@
 		{% else %}
 			{% if linklistOutput %}
 			{% load link_tags %}
+				<div>
 					{% for link in linklistOutput %}
-					<table class = "card">
-						<tr>
+					<div class = "card">
 						{% if controlint == 0 %}
-							<td>
-								<img src="{% get_name link %}" class="beside"> {{ link | safe }}
-							</td>
+						<div>
+							<img src="{% get_name link %}" class="beside"> {{ link | safe }}
+						</div>
 						{% else %}
-							<td>
-								{{ link | safe }}
-							</td>
+							{{ link | safe }}
 						{% endif %}
 						{% if controlint == 0 %}
-							<td>
+							<div>
 								{% autoescape off %}
 									{% get_links link requests %}
 								{% endautoescape %}
-							</td>
+							</div>
 						{% endif %}
-					</tr>
-				</table>
+					</div>
 					{% endfor %}
+				</div>
 			{% else %}
 				<p>No jobs on moodle</p>
 			{% endif %}
