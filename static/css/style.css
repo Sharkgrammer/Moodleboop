@@ -20,3 +20,16 @@ a:hover {
   text-decoration: none;
   display: inline-block;
 }
+
+.butmain:link, .butmain:visited, .butmain:hover, .butmain:active {
+  background-color: black;
+  font-size: 140%;
+  color: white;
+  padding: 25px 20px;
+  margin: 10px 10px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+

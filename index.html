@@ -3,19 +3,27 @@
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	</head>
-    <body class="main">
-		{% if linklistOutput %}
-		{% load link_tags %}
-			<ul>
-				{% for link in linklistOutput %}
-					{{ link | safe }}
-					{% autoescape off %}
-						{% get_links link requests %}
-					{% endautoescape %}
-				{% endfor %}
-			</ul>
+    <body>
+		{% if controlint == 3 %}
+			<a href="/jobs" class="butmain">Jobs</a>
+			</br>
+			<a href="/interviews" class="butmain">Inteviews</a>
 		{% else %}
-			<p>No jobs on moodle</p>
+			{% if linklistOutput %}
+			{% load link_tags %}
+				<ul>
+					{% for link in linklistOutput %}
+						{{ link | safe }}
+						{% if controlint == 0 %}
+							{% autoescape off %}
+								{% get_links link requests %}
+							{% endautoescape %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			{% else %}
+				<p>No jobs on moodle</p>
+			{% endif %}
 		{% endif %}
     </body>
 </html>
