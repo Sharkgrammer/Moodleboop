@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
-    <body>
+    <body >
 		{% if controlint == 3 %}
 			<a href="/jobs" class="butmain">Jobs</a>
 			</br>
@@ -15,7 +15,7 @@
 			{% if linklistOutput %}
 			{% load link_tags %}
 			{% for link in linklistOutput %}
-				<div class="card">
+				<div style="{background-color: red">
 					<div class = "container-fluid">
 						<div class="row">
 							{% if controlint == 0 %}
