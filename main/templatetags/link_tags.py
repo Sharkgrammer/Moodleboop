@@ -19,5 +19,5 @@ def get_links(LinkFull, r):
 
 @register.simple_tag
 def get_name(LinkFull):
-    data = "https://logo.clearbit.com/" + LinkFull.split("-")[0].replace("<h3class='beside'><b>", "").replace(" ","") + ".com?size=80"
+    data = "https://logo.clearbit.com/" + LinkFull.split("-")[0].replace("<h3 class='beside'><b>", "").replace(" ","") + ".com?size=80"
     return data
