@@ -38,15 +38,17 @@ a:hover {
 }
 
 .card {
-	background: #E0E0E0;
+	background: #f1f1f1;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 15px;
-	margin-top: 10;
-    margin-bottom: 10;
+	margin-top: 10px;
+    margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
 	padding-right: 20px;
     padding-left: 20px;
+	padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .card:hover {
@@ -55,5 +57,4 @@ a:hover {
 
 div {
   text-align: center;
-  width: 100%;
 }
