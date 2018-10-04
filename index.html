@@ -1,8 +1,8 @@
 <html>
 	<head>
 		{% load static %}
-		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
@@ -37,7 +37,7 @@
 						<div class="row">
 							{% if controlint == 0 %}
 								<div class="col-sm-2">
-									<img class="imgclass rounded-circle border border-dark" src="{% get_name link %}" alt="{% split_link link 2 %}" onerror="this.src='https://i.pinimg.com/originals/22/eb/41/22eb41232f36d54bf47e9ca742863392.png'">
+									<img src="{% get_name link %}" alt="{% split_link link 2 %}" onerror="this.src='https://i.pinimg.com/originals/22/eb/41/22eb41232f36d54bf47e9ca742863392.png'">
 								</div>
 								<div class="col-sm-8">
 									<b class ="bc"> {% split_link link 0 %}</b>
