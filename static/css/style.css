@@ -21,10 +21,22 @@ a:hover {
   display: inline-block;
 }
 
-.butmain:link, .butmain:visited, .butmain:hover, .butmain:active {
+.butmain1:link, .butmain1:visited, .butmain1:hover, .butmain1:active {
   background-color: black;
   font-size: 140%;
   color: white;
+  padding: 25px 20px;
+  margin: 10px 10px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.butmain2:link, .butmain2:visited, .butmain2:hover, .butmain2:active {
+  background-color: white;
+  font-size: 140%;
+  color: black;
   padding: 25px 20px;
   margin: 10px 10px;
   border-radius: 25px;
@@ -54,5 +66,10 @@ img{
 }
 
 div {
+  text-align: center;
+}
+
+#outer {
+  width: 100%;
   text-align: center;
 }

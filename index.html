@@ -8,9 +8,14 @@
 	
     <body >
 		{% if controlint == 3 %}
-			<a href="/jobs" class="butmain center">Job postings</a>
-			</br>
-			<a href="/interviews" class="butmain center">Other resources</a>
+			<div class="row">
+				<div class="col-sm-6 outer" style="background-color: white; height: 100%">
+					<a href="/jobs" class="butmain1">Job postings</a>
+				</div>
+				<div class="col-sm-6 outer" style="background-color: black;  height: 100%">
+					<a href="/interviews" class="butmain2">Other resources</a>
+				</div>
+			</div>
 		{% else %}
 			{% if linklistOutput %}
 			{% load link_tags %}
