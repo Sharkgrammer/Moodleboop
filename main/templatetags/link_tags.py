@@ -13,7 +13,7 @@ def get_links(LinkFull, r):
     Links = tree2.xpath('//a')
     for y in range(0, len(Links)):
         if "forcedownload" in Links[y].get("href"):
-            data += ("<p><a href='" + Links[y].get("href").replace("?forcedownload=1", "") + "'>" + Links[y].text  + "</a></p>")
+            data += ("<p><a href='" + Links[y].get("href").replace("?forcedownload=1", "") + "' style='color: #212121;'>" + Links[y].text  + "</a></p>")
             #print (Links[y].text.replace("Job Spec -","").replace("Job Spec ","").replace(".pdf","") +  "   " + Links[y].get("href").replace("?forcedownload=1", ""))
     return data
 
