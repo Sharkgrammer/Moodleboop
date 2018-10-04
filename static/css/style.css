@@ -6,12 +6,16 @@ a {
   text-decoration: none;
 }
 
+b {
+  
+}
+
 a:hover {
   text-decoration: underline;
 }
 
 .but:link, .but:visited, .but:hover, .but:active {
-  background-color: black;
+  background-color: #003366;
   color: white;
   padding: 5px 10px;
   margin: 10px 10px;
@@ -22,7 +26,7 @@ a:hover {
 }
 
 .butmain1:link, .butmain1:visited, .butmain1:hover, .butmain1:active {
-  background-color: black;
+  background-color: #003366;
   font-size: 140%;
   color: white;
   padding: 25px 20px;
@@ -42,7 +46,7 @@ a:hover {
 .butmain2:link, .butmain2:visited, .butmain2:hover, .butmain2:active {
   background-color: white;
   font-size: 140%;
-  color: black;
+  color: #003366;
   padding: 25px 20px;
   margin: 10px 10px;
   border-radius: 25px;
