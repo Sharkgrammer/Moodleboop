@@ -62,14 +62,7 @@ a:hover {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
-img{
-	vertical-align: middle;
-  	border-style: solid;
-  	border-color: rgba(0,0,0, 0.3);
-	border-width: 0.1rem;
-  	border-radius: 15rem;
-  	max-width: 6.3rem;
-   	padding: 0.5rem;
+.imgclass{
     height: 60px;
 	margin-top: 5px;
 	margin-bottom: 5px;
