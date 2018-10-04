@@ -36,8 +36,9 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 40%;
-  height: 50%;
+  width: 42%;
+  height: 42%;
+  overflow: auto;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -53,8 +54,9 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 40%;
-  height: 50%;
+  width: 42%;
+  height: 42%;
+  overflow: auto;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -90,6 +92,13 @@ img{
 
 div {
   text-align: center;
+}
+
+.centerscreen{
+	position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); 
 }
 
 #outer {
