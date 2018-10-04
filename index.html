@@ -8,9 +8,9 @@
 	
     <body >
 		{% if controlint == 3 %}
-			<a href="/jobs" class="butmain">Jobs</a>
+			<a href="/jobs" class="butmain center">Job postings</a>
 			</br>
-			<a href="/interviews" class="butmain">Inteviews</a>
+			<a href="/interviews" class="butmain center">Other resources</a>
 		{% else %}
 			{% if linklistOutput %}
 			{% load link_tags %}
@@ -19,25 +19,29 @@
 					<div class = "card" style="background-color: #f1f1f1;">
 						<div class="row">
 							{% if controlint == 0 %}
-							<div class="col-sm-2">
-								<img src="{% get_name link %}" alt="{% split_link link 2 %}" onerror="this.src='https://i.pinimg.com/originals/22/eb/41/22eb41232f36d54bf47e9ca742863392.png'">
-							</div>
-							<div class="col-sm-8">
-								<h><b>{% split_link link 0 %}</b></h3>
-								{% if controlint == 0 %}
-									<div>
-										{% autoescape off %}
-											{% get_links link requests %}
-										{% endautoescape %}
-									</div>
-								{% endif %}
-							</div>
-							<div class="col-sm-2">
-								<a href="{% split_link link 1 %}" class="but">Submit link</a>
-							</div>
+								<div class="col-sm-2">
+									<img src="{% get_name link %}" alt="{% split_link link 2 %}" onerror="this.src='https://i.pinimg.com/originals/22/eb/41/22eb41232f36d54bf47e9ca742863392.png'">
+								</div>
+								<div class="col-sm-8">
+									<b>{% split_link link 0 %}</b>
+										<div>
+											{% autoescape off %}
+												{% get_links link requests %}
+											{% endautoescape %}
+										</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="{% split_link link 1 %}" class="but">Submit link</a>
+								</div>
 							{% else %}
-								<div style=" margin-left: 20px;">
-									{{ link | safe }}
+								<div class="col-sm-1">
+									<!--  blank space here -->
+								</div>
+								<div class="col-sm-7">
+									<h4><b>{% split_link link 0 %}</b></h4>
+								</div>
+								<div class="col-sm-4">
+									<a href="{% split_link link 1 %}" class="but">View link</a>
 								</div>
 							{% endif %}
 						</div>

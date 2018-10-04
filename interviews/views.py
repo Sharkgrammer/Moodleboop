@@ -22,13 +22,13 @@ def index(request):
     for x in range (0, len(LinkData)):
         if "resource" in LinkData[x].get("href") and "Assignment" not in NameData[x]: #and "Placement Offers" not in NameData[x]:
             #data+= ("<h3><b><a href='" + LinkData[x].get("href") + "'>" + NameData[x] + "</a></b></h3>")
-            data = ("<h3><b>" + NameData[x] + "   " + "<a href='" + LinkData[x].get("href") + "' class='but'>View link</a></b></h3>")
+            data = (NameData[x] + "-----" + LinkData[x].get("href"))
             linklistOutput.append(data)
             print (NameData[x] + "  " + LinkData[x].get("href"))
      
     return render(request, 'index.html', {'renderhere': data, 'linklistOutput': linklistOutput, 'requests': r, 'controlint': 1})
     return HttpResponse(data)
-	
+    
 #So that the password is slightly obscure to feel semi safe
 def decode(key, enc):
     dec = []
