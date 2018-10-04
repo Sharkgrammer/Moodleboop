@@ -20,7 +20,7 @@
 				</div>
 				<div class="col-sm-6 outer" style="background-color: #001547;  height: 100%">
 					<a href="/interviews" class="butmain2">
-					<h3><b>Other resources</b></h3>
+					<h3><b class ="bc">Other resources</b></h3>
 					<p>
 					Most other data is scraped here
 					Has interview schedules, attendence and other data
@@ -40,8 +40,8 @@
 									<img src="{% get_name link %}" alt="{% split_link link 2 %}" onerror="this.src='https://i.pinimg.com/originals/22/eb/41/22eb41232f36d54bf47e9ca742863392.png'">
 								</div>
 								<div class="col-sm-8">
-									<b>{% split_link link 0 %}</b>
-										<div>
+									<b class ="bc"> {% split_link link 0 %}</b>
+										<div style="color: #212121;">
 											{% autoescape off %}
 												{% get_links link requests %}
 											{% endautoescape %}
@@ -55,7 +55,7 @@
 									<!--  blank space here -->
 								</div>
 								<div class="col-sm-7">
-									<h4><b>{% split_link link 0 %}</b></h4>
+									<h4><b class ="bc">{% split_link link 0 %}</b></h4>
 								</div>
 								<div class="col-sm-4">
 									<a href="{% split_link link 1 %}" class="but">View link</a>
