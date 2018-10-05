@@ -66,7 +66,15 @@
 				</div>
 			{% endfor %}
 			{% else %}
-				<p>No jobs on moodle</p>
+				{% if controlint == 0 %}
+					<div class = "card" style="background-color: #f1f1f1;">
+						<h4><b class ="bc">No Jobs on moodle</b></h4>
+					</div>
+				{% else %}
+					<div class = "card" style="background-color: #f1f1f1;">
+						<h4><b class ="bc">No other resources on moodle</b></h4>
+					</div>
+				{% endif %}
 			{% endif %}
 		{% endif %}
     </body>
