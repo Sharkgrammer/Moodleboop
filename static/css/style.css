@@ -154,6 +154,13 @@ div {
 		position: absolute;
 		top: 0; left: 0; bottom: 0; right: 0;
 	}
+	
+	.centerscreen{
+		position: relative;
+		top: 50%; 
+		transform: translateY(-40%);
+		-webkit-transform: translateY(-40%); 
+	}
 }
 
 
