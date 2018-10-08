@@ -120,7 +120,7 @@ div {
 
 @media screen and (max-width: 600px) {
     .butmain1:link, .butmain1:visited, .butmain1:hover, .butmain1:active {
-		background-color: #001547;
+		background-color: red;
 		font-size: 90%;
 		color: white;
 		padding: 30px 30px;
