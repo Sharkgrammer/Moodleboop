@@ -117,3 +117,43 @@ div {
   height: 100%;
   text-align: center;
 }
+
+@media only screen and (max-width: 300px) {
+    .butmain1:link, .butmain1:visited, .butmain1:hover, .butmain1:active {
+		background-color: #001547;
+		font-size: 90%;
+		color: white;
+		padding: 30px 30px;
+		margin: 15px 15px;
+		border-radius: 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		width: 50%;
+		height: 50%;
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+
+	.butmain2:link, .butmain2:visited, .butmain2:hover, .butmain2:active {
+		background-color: white;
+		font-size: 90%;
+		color: #001547;
+		padding: 30px 30px;
+		margin: 15px 15px;
+		border-radius: 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		width: 50%;
+		height: 50%;
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+}
+
+
