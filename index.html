@@ -8,9 +8,9 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 	</head>
 	
-    <body>
-		{% if controlint == 3 %}
-			<div class="row" style="width: 101%; height: 100%;">
+	{% if controlint == 3 %}
+    <body style="background-color: #001547;">
+			<div class="row" style="width: 101%;">
 				<div class="col-sm-6 outer" style="background-color: white; height: 100%;">
 					<a href="/jobs" class="butmain1">
 					<h3 class="centerscreen"><b>Job postings</b></h3>
@@ -30,8 +30,10 @@
 					</a>
 				</div>
 			</div>
-		{% else %}
-			{% if linklistOutput %}
+		</body>
+	{% else %}
+	<body>
+		{% if linklistOutput %}
 			{% load link_tags %}
 			{% for link in linklistOutput %}
 				<div>
@@ -78,6 +80,6 @@
 					</div>
 				{% endif %}
 			{% endif %}
-		{% endif %}
-    </body>
+	    </body>
+	{% endif %}
 </html>
