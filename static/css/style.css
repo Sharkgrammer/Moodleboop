@@ -118,7 +118,7 @@ div {
   text-align: center;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     .butmain1:link, .butmain1:visited, .butmain1:hover, .butmain1:active {
 		background-color: #001547;
 		font-size: 90%;
