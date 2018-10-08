@@ -7,6 +7,16 @@ a {
 	text-decoration: none;
 }
 
+html {
+
+margin:0 auto;
+
+padding:0;
+
+height: 100%;
+
+}
+
 .bc {
 	color: #002071;
 }
@@ -92,6 +102,7 @@ img{
 
 div {
   text-align: center;
+  overflow: hidden;
 }
 
 .centerscreen{
