@@ -157,18 +157,10 @@ div {
 	
 	.centerscreen{
 		position: relative;
-		top: 43%; 
+		top: 50%; 
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%); 
 	}
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
 
-.navbar .navbar-collapse {
-  text-align: center;
-}
