@@ -1,1 +1,0 @@
-web: gunicorn Moodleboop.wsgi:application
