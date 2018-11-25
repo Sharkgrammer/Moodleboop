@@ -20,7 +20,8 @@ def index(request):
     LinkData = tree.xpath('//div[@class="activityinstance"]//a')
     NameData = tree.xpath('//div[@class="activityinstance"]//a//span[@class="instancename"]/text()')
     for x in range (0, len(LinkData)):
-        if "resource" not in LinkData[x].get("href") and "Assignment" not in NameData[x] and "Placement Offer" not in NameData[x] and "Opportunity Update" not in NameData[x] and "Company Presentation" not in NameData[x] and "Lecture" not in NameData[x]:
+        #so this isnt the efficent way of doing it but its too late now
+        if "resource" not in LinkData[x].get("href") and "Assignment" not in NameData[x] and "Placement Offer" not in NameData[x] and "Opportunity Update" not in NameData[x] and "Company Presentation" not in NameData[x] and "Lecture" not in NameData[x] and "Interview Outcome" not in NameData[x]:
             #data+= ("<h3><b><a href='" + LinkData[x].get("href") + "'>" + NameData[x] + "</a></b></h3>")
             data = (NameData[x] + "-----" + LinkData[x].get("href"))
             linklistOutput.append(data)
@@ -28,7 +29,7 @@ def index(request):
      
     return render(request, 'index.html', {'renderhere': data, 'linklistOutput': linklistOutput, 'requests': r, 'controlint': 0})
     return HttpResponse(data)
-	
+    
 #So that the password is slightly obscure to feel semi safe
 def decode(key, enc):
     dec = []
