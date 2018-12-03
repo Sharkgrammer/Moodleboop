@@ -21,7 +21,7 @@ def index(request):
     NameData = tree.xpath('//div[@class="activityinstance"]//a//span[@class="instancename"]/text()')
     for x in range (len(LinkData) - 1,-1, -1):
         #Sigh
-        if ("resource" in LinkData[x].get("href") and "Assignment" not in NameData[x]) or ("Placement Offer" in NameData[x] or "Opportunity Update" in NameData[x] or "Company Presentation" in NameData[x] or "Lecture" in NameData[x] or "Interview Outcome" in NameData[x]): #and "Placement Offers" not in NameData[x]:
+        if ("resource" in LinkData[x].get("href") and "Assignment" not in NameData[x]) or ("placement offer" in NameData[x].lower() or "Opportunity Update" in NameData[x] or "Company Presentation" in NameData[x] or "Lecture" in NameData[x] or "Interview Outcome" in NameData[x]): #and "Placement Offers" not in NameData[x]:
             #data+= ("<h3><b><a href='" + LinkData[x].get("href") + "'>" + NameData[x] + "</a></b></h3>")
             data = (NameData[x] + "-----" + LinkData[x].get("href"))
             linklistOutput.append(data)
