@@ -1,7 +1,13 @@
-# moodle-server-scraper
+# Moodle BIS3 data scraper
 
-A python script hosted on a django server in a basic way.
-https://moodleboop.herokuapp.com/
+Used to show placement information from Moodle for BIS3 students.
 
-Main branch used as the server deploys off of it.
-If anyone edits it ensure to run tests on another branch and fully works before being deployed to server
+
+Desktop:
+![Desktop1](https://i.imgur.com/jFpVGQu.png)
+
+![Desktop2](https://i.imgur.com/OoiJ3gZ.png)
+
+![Desktop3](https://i.imgur.com/wstMsIi.png)
+Mobile:
+![Mobile](https://i.imgur.com/3m1ku4T.png)
